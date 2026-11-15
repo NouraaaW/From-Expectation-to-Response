@@ -10,9 +10,9 @@ This repository contains an NLP project on dialogue pragmatics. Using adjacent u
 * **Classification:** Predicting Expected Response Function, Actual Function and Fulfillment from the text, evaluated with dialogue-grouped stratified 5-fold cross-validation and Macro-F1 as the main metric.
 
 ## Repository Contents
-* `Data Collection/`: `01_Dataset_Collection.ipynb` and `dialogue_expectation_mismatch.csv` (the 3,000 collected pairs, label columns empty).
-* `Dialogue Annotation/`: `02_LLM_Annotation.ipynb` and `llm_annotations_master.csv` (raw outputs of all models and runs).
-* `Data Preparation/`: `03_Aggregation_and_Agreement.ipynb` and `final_annotated_dataset.csv` (final labels after voting).
+* `Data Collection/`: `Dataset_Collection.ipynb` and `dialogue_expectation_mismatch.csv` (the 3,000 collected pairs, label columns empty).
+* `Dialogue Annotation/`: `LLM_Annotation.ipynb` and `llm_annotations_master.csv` (raw outputs of all models and runs).
+* `Data Preparation/`: `Aggregation_and_Agreement.ipynb` and `final_annotated_dataset.csv` (final labels after voting).
 * `Dialogue Classification/`: classification notebooks, which read `final_annotated_dataset.csv`.
 
 Notebooks read files from their own folder, so copy the input CSV next to the notebook before running it.
